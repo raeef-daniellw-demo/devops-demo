@@ -1,4 +1,3 @@
-// adding a comment just to push again
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -51,6 +50,8 @@ app.get('/', (req, res) => {
         res.send(commentsHtml);
     });
 });
+
+
 
 app.post('/comment', (req, res) => {
     const userComment = req.body.comment;
